@@ -1,0 +1,29 @@
+.product__container:hover .product_img>img{
+    filter: blur(3px);
+}
+
+.product__actions{
+    opacity: 0;
+}
+
+.product__container:hover .product__actions{
+    opacity: 1;
+    filter:none blur(0);
+}
+
+.product__actions>div{
+    cursor: pointer;
+}
+
+.product__actions>div img{
+    transition: all 0.7s ease;
+}
+
+.product__actions>div:hover {
+ scale: 0.9;
+}
+
+.product__actions>div:hover img {
+   scale: 1.35;
+   transform: rotateY(360deg);
+}
